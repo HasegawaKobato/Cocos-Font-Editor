@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./main.js"></script>
+
+    <style>
+        #canvas {
+            margin-top: 15px;
+            border: 1px solid red;
+        }
+
+        input[type=number] {
+            width: 50px;
+        }
+
+        input[readonly] {
+            border: 1px solid grey;
+            background-color: gainsboro;
+            color: gray;
+            user-select: none;
+            cursor: not-allowed;
+        }
+
+        .block {
+            width: 100%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+
+        .field {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: fit-content;
+            margin: 0.5rem 0.5rem 0.5rem 0;
+        }
+
+        .fieldText {
+            margin-right: 1rem;
+        }
+
+        .actionBtn {
+            width: 1rem;
+            line-height: 1rem;
+            margin-left: 0.5rem;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 3px;
+            background-color: #EEE;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .actionBtn:hover {
+            background-color: #CCC;
+        }
+
+        .export {
+            width: 100px;
+            text-align: center;
+            background-color: rgb(173, 211, 255);
+            padding: 5px;
+            border: 1px solid black;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <input id="file" type="file" multiple style="display: block;" accept=".png,.fnt"><br>
+    <form></form>
+</body>
+
+</html>
